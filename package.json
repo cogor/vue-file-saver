@@ -1,12 +1,9 @@
 {
   "name": "vue-file-saver",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
