@@ -13,16 +13,19 @@
     "vue",
     "utils"
   ],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
-      "import": "./vue-file-saver.js",
-      "require": "./vue-file-saver.umd.cjs"
+      "import": "./dist/vue-file-saver.js",
+      "require": "./dist/vue-file-saver.umd.cjs"
     },
-    "./*": "./*"
+    "./dist/*": "./*"
   },
-  "main": "./vue-file-saver.umd.cjs",
-  "module": "./vue-file-saver.js",
-  "types": "./index.d.ts",
+  "main": "./dist/vue-file-saver.umd.cjs",
+  "module": "./dist/vue-file-saver.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "run-p type-check \"build-only {@}\" --",
     "test:unit": "vitest",
