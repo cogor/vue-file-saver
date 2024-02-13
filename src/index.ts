@@ -29,6 +29,8 @@ export function useFileSaver(linkText?: string) {
     await nextTick()
     if (linkRef.value) {
       linkRef.value.click()
+      linkAttrs.filename = null
+      linkAttrs.link = null
     }
   }
   return {

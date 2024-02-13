@@ -2,6 +2,27 @@
   "name": "vue-file-saver",
   "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Ilya Artamonov"
+  },
+  "repository": {
+    "url": "https://github.com/cogor/vue-file-saver"
+  },
+  "keywords": [
+    "vue",
+    "utils"
+  ],
+  "exports": {
+    ".": {
+      "import": "./vue-file-saver.js",
+      "require": "./vue-file-saver.umd.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "./vue-file-saver.umd.cjs",
+  "module": "./vue-file-saver.js",
+  "types": "./index.d.ts",
   "scripts": {
     "build": "run-p type-check \"build-only {@}\" --",
     "test:unit": "vitest",
