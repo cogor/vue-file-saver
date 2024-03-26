@@ -37,7 +37,7 @@ Use `saveAs` function in any component
     const { saveAs } = useFileSaver()
     
     function myDownloadFn() {
-      saveAs(Blob, "my-file.txt")
+      saveAs(ObjectURL, "my-file.txt")
     }
 </script>
 
